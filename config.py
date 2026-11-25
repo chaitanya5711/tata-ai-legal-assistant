@@ -24,7 +24,7 @@ EVAL_FILE = BASE_DIR / "evaluation" / "questions.json"
 # English: all-MiniLM-L6-v2 (default). For Hindi/Marathi documents use
 # EMBEDDING_MODEL=paraphrase-multilingual-MiniLM-L12-v2 in .env (a new index is built automatically).
 EMBEDDING_MODEL = _env("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
-COLLECTION_NAME = "tata_legal_" + re.sub(r"[^a-z0-9]+", "_", EMBEDDING_MODEL.lower()).strip("_")[:40]
+COLLECTION_NAME = "tata_legal_" + re.sub(r"[^a-z0-9]+", "_", EMBEDDING_MODEL.lower()).strip("_")[:40] + "_v2"
 CHUNK_SIZE = 500
 CHUNK_OVERLAP = 50
 TOP_K = 4               # chunks used to answer a chat question

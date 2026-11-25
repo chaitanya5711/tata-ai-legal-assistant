@@ -6,7 +6,6 @@ pydantic
 streamlit
 httpx
 chromadb
-sentence-transformers
 langgraph
 pypdf
 python-docx

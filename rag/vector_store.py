@@ -17,7 +17,12 @@ def get_collection():
 
         CHROMA_DIR.mkdir(parents=True, exist_ok=True)
         client = chromadb.PersistentClient(path=str(CHROMA_DIR))
-        embed_fn = embedding_functions.SentenceTransformerEmbeddingFunction(model_name=EMBEDDING_MODEL)
+        if EMBEDDING_MODEL == "all-MiniLM-L6-v2":
+            # Same MiniLM model, run with ONNX (built into ChromaDB): no PyTorch, low memory.
+            embed_fn = embedding_functions.ONNXMiniLM_L6_V2()
+        else:
+            # Other models (e.g. multilingual) need: pip install sentence-transformers
+            embed_fn = embedding_functions.SentenceTransformerEmbeddingFunction(model_name=EMBEDDING_MODEL)
         _collection = client.get_or_create_collection(
             name=COLLECTION_NAME,
             embedding_function=embed_fn,
