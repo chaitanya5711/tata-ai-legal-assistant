@@ -7,9 +7,9 @@ Applied GenAI Engineering: Capstone Project
 🔗 Links
 What	Link
 🎥 Project video:https://docs.google.com/videos/d/1L3F6A0uUKrFTo6vMX0tcQinEttROJ7QDCo-YDvyIKxw/play
-🌐 Live app | https://tata-ai-legal-assistant-1.onrender.com |
-⚙️ API docs | https://tata-ai-legal-assistant.onrender.com/docs |
-📊 Presentation:https://drive.google.com/file/d/1TtmnygmfBlZ0NUQGGsdOVzKHIUOMzn2j/view?usp=sharing
+🌐 Live app	https://tata-ai-legal-assistant-1.onrender.com
+⚙️ API docs	https://tata-ai-legal-assistant.onrender.com/docs
+📊 Presentation://drive.google.com/file/d/1TtmnygmfBlZ0NUQGGsdOVzKHIUOMzn2j/view?usp=sharing
 
 Hosted on Render's free plan: the first load can take about a minute while the server wakes up.
 
@@ -94,3 +94,5 @@ Future: OCR, authentication and roles, a verification step for every claim, batc
 👤 Author
 
 Chaitanya Jadhav GitHub: chaitanya5711 · LinkedIn: chaitanyatj369344259
+
+
